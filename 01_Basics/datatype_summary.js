@@ -5,7 +5,7 @@
 
 // ==>> # Primitive --> whenever we copy or call it from somewhere we only get it's copied data not the refrence of the memory where original data is stored and the changes we do is only reflected in the copied the data not the original untill and unless we specifically change the original data(({[CALL BY VALUE]})). 
     
-     //  >--> string, NUMBER, boolean, null(empty), undefined, symbol(it is used to make a value(ex - button) unique), BigInt 
+//       >--> string, NUMBER, boolean, null(empty), undefined, symbol(it is used to make a value(ex - button) unique), BigInt 
 
 /*JAVASCRIPT IS DYNAMIC TYPE LANGUAGE BECAUSE
     
@@ -27,15 +27,15 @@
 
 // ex -
 
-const score = 100
-const scoreValue = 100.3
+// const score = 100
+// const scoreValue = 100.3
 
-const isLoggedIn = false
-const outsideTemp = null
-let userEmail;
+// const isLoggedIn = false
+// const outsideTemp = null
+// let userEmail;
 
 const Id = Symbol("123")
-const anotherId = symbol("123")
+const anotherId = Symbol("123")
 
 console.log(Id === anotherId);
 
