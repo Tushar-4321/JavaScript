@@ -65,3 +65,31 @@ console.log(typeof BigNumber);
 
 // documentation for thic chapter ==>
        // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// +++++++++++++++++++++++++---------------------------------+++++++++++++++++++++++++++++
+
+// MEMORY --> There are two types of memory
+// Stack(all Primitive types uses stack memory){call by value}, 
+// Heap(non-primitive type uses heap memory){call by refrence}
+
+let myYoutubename = "tushardotcom"
+
+let anothername = myYoutubename  // It get's copied value not the original
+anothername = "chaiaurcode"// original will not change only copy will change
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+       email: "tushar@gmail.com",
+       upi: "tushar@oki"
+}
+console.log(userOne.email);// here userOne.email will not change 
+let userTwo = userOne// but here it will change beacause of heap memory as it is call by refrence and it doesnot give copy but gives real value
+
+userTwo.email = "anshtk@gmail.com" // value will change 
+
+console.log(userOne.email);
+console.log(userTwo.email);// heap memory --> call by refrence it get's refrence of the memory space
+
