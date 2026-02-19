@@ -7,6 +7,8 @@
     
 //       >--> string, NUMBER, boolean, null(empty), undefined, symbol(it is used to make a value(ex - button) unique), BigInt 
 
+// ---------------------------------*******************------------------------------------------------
+
 /*JAVASCRIPT IS DYNAMIC TYPE LANGUAGE BECAUSE
     
 --->  The short answer is: JavaScript trades performance for expressive power and dynamism.
@@ -28,20 +30,38 @@
 // ex -
 
 // const score = 100
-// const scoreValue = 100.3
+ const scoreValue = 100.3 // typeof ==> number
 
-// const isLoggedIn = false
-// const outsideTemp = null
+ const isLoggedIn = false // typeof ==> Boolean
+// const outsideTemp = null  // if run inside typeof gives Object
 // let userEmail;
 
-const Id = Symbol("123")
+const Id = Symbol("123") // typeof ==> symbol
 const anotherId = Symbol("123")
 
-console.log(Id === anotherId);
+console.log(Id === anotherId);// to check whether they both are same or not(well they are not same as return type is symbol which is another datatype(value) unique for every return) output ==> false
 
+const BigNumber = 384758604857687909598794n // syntax to write a bigInt  // typeof ==> bigInt
 
+// --------------------------**********************---------------------------
 
 // ==>> # Refrence(Non Primitive) --> The refrence of memory of a Data can be directly allocated to a particular or any other function, variable etc.     
 
-     // >--> Array, Objects, Functions 
+     // >--> Array, Objects, Functions // they are called function(return datatype in typeof but Function's return is called object function)
 
+const heroes = ["shaktiman", "nagraaj", "doga"] // arrays
+
+let myObj = {
+       name:  "Tushar",
+       age: 25, 
+} // Objects
+
+const myFunction = function(){
+       console.log("Hello World");
+       
+} // a function is given to a or declared in a variable or stored in a variable // typeof ==> function(returns function but is called object function)
+
+console.log(typeof BigNumber);
+
+// documentation for thic chapter ==>
+       // https://262.ecma-international.org/5.1/#sec-11.4.3
